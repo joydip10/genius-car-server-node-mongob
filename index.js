@@ -59,7 +59,7 @@ async function run() {
     }
 }
 run().catch(console.dir);
-app.get('hello',(req,res)=>{
+app.get('/hello',(req,res)=>{
     res.send('Hello');
 })
 app.listen(port, () => {
